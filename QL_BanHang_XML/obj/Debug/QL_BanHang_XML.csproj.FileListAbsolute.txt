@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\bin\Debug\QL_BanHang_XML.exe.config
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\bin\Debug\QL_BanHang_XML.exe
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\bin\Debug\QL_BanHang_XML.pdb
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.Login.resources
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.Properties.Resources.resources
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.exe
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.pdb
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.Home.resources
+C:\Users\Admin\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.QL_San_Pham.resources

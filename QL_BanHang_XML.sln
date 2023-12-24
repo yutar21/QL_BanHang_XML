@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QL_BanHang_XML", "QL_BanHang_XML\QL_BanHang_XML.csproj", "{D87E02CA-DD53-4C79-9103-8B417AFAAD70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D87E02CA-DD53-4C79-9103-8B417AFAAD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87E02CA-DD53-4C79-9103-8B417AFAAD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87E02CA-DD53-4C79-9103-8B417AFAAD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87E02CA-DD53-4C79-9103-8B417AFAAD70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB499EDA-2C58-4A51-B485-8409342CE20B}
+	EndGlobalSection
+EndGlobal
