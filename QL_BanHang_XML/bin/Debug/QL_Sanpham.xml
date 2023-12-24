@@ -1,0 +1,32 @@
+<data>
+  <product id="1">
+    <name>Tương ớt</name>
+    <gia>12000</gia>
+    <soluong>10</soluong>
+    <mota>cay vl</mota>
+    <ngaysanxuat>11/11/2023</ngaysanxuat>
+    <hansudung>12/12/2023</hansudung>
+  </product>
+  <product id="2">
+    <name>Mắm tôm</name>
+    <gia>5000</gia>
+    <soluong>10</soluong>
+    <mota>khắm vl</mota>
+    <ngaysanxuat>11/11/2021</ngaysanxuat>
+    <hansudung>12/11/2022</hansudung>
+  </product>
+  <product id="">
+    <name>
+    </name>
+    <gia>
+    </gia>
+    <soluong>
+    </soluong>
+    <mota>
+    </mota>
+    <ngaysanxuat>
+    </ngaysanxuat>
+    <hansudung>
+    </hansudung>
+  </product>
+</data>
