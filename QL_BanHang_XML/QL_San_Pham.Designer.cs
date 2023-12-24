@@ -32,7 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSP = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
@@ -54,9 +54,9 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.searchsp = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblCout = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSP)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -103,13 +103,14 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // dataGridViewSP
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(324, 52);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(604, 456);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridViewSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSP.Location = new System.Drawing.Point(324, 52);
+            this.dataGridViewSP.Name = "dataGridViewSP";
+            this.dataGridViewSP.Size = new System.Drawing.Size(604, 456);
+            this.dataGridViewSP.TabIndex = 15;
+            this.dataGridViewSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSP_CellClick);
             // 
             // id
             // 
@@ -280,6 +281,7 @@
             this.editspbtn.TabIndex = 6;
             this.editspbtn.Text = "Sửa sản phẩm";
             this.editspbtn.UseVisualStyleBackColor = true;
+            this.editspbtn.Click += new System.EventHandler(this.editspbtn_Click);
             // 
             // deletespbtn
             // 
@@ -300,6 +302,7 @@
             this.clear.TabIndex = 6;
             this.clear.Text = "Clear";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // textBox8
             // 
@@ -332,17 +335,17 @@
             this.label9.Text = "Tông sản phẩm";
             this.label9.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label10
+            // lblCout
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(178, 337);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(15, 16);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "0";
-            this.label10.Click += new System.EventHandler(this.label1_Click);
+            this.lblCout.AutoSize = true;
+            this.lblCout.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.lblCout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCout.Location = new System.Drawing.Point(178, 337);
+            this.lblCout.Name = "lblCout";
+            this.lblCout.Size = new System.Drawing.Size(15, 16);
+            this.lblCout.TabIndex = 17;
+            this.lblCout.Text = "0";
+            this.lblCout.Click += new System.EventHandler(this.label1_Click);
             // 
             // QL_San_Pham
             // 
@@ -350,7 +353,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(920, 560);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblCout);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -367,7 +370,7 @@
             this.Controls.Add(this.gia);
             this.Controls.Add(this.name);
             this.Controls.Add(this.id);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewSP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.deletespbtn);
             this.Controls.Add(this.clear);
@@ -382,7 +385,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QL_San_Pham";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,7 +396,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSP;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox name;
@@ -415,6 +418,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button searchsp;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblCout;
     }
 }
