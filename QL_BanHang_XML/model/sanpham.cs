@@ -16,8 +16,5 @@ namespace QL_BanHang_XML.model
         public String ngaysanxuat { get; set; }
         public String hansudung { get; set; }
 
-
-
-
     }
 }
