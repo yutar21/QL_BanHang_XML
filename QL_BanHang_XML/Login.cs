@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace QL_BanHang_XML
 {
@@ -51,8 +53,6 @@ namespace QL_BanHang_XML
 
         private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
-            // Thiết lập ký tự password
-            textBoxPassword.PasswordChar = '*';
 
         }
     }
