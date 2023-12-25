@@ -51,7 +51,7 @@
             this.editspbtn = new System.Windows.Forms.Button();
             this.deletespbtn = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.searchsp = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.lblCout = new System.Windows.Forms.Label();
@@ -292,6 +292,7 @@
             this.deletespbtn.TabIndex = 6;
             this.deletespbtn.Text = "Xoá sản phẩm";
             this.deletespbtn.UseVisualStyleBackColor = true;
+            this.deletespbtn.Click += new System.EventHandler(this.deletespbtn_Click);
             // 
             // clear
             // 
@@ -304,14 +305,14 @@
             this.clear.UseVisualStyleBackColor = true;
             this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // textBox8
+            // txtSearch
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(123, 459);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(183, 22);
-            this.textBox8.TabIndex = 16;
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(123, 459);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(183, 22);
+            this.txtSearch.TabIndex = 16;
             // 
             // searchsp
             // 
@@ -322,6 +323,7 @@
             this.searchsp.TabIndex = 6;
             this.searchsp.Text = "Tìm kiếm";
             this.searchsp.UseVisualStyleBackColor = true;
+            this.searchsp.Click += new System.EventHandler(this.searchsp_Click);
             // 
             // label9
             // 
@@ -362,7 +364,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.hansudung);
             this.Controls.Add(this.ngaysanxuat);
             this.Controls.Add(this.mota);
@@ -415,7 +417,7 @@
         private System.Windows.Forms.Button editspbtn;
         private System.Windows.Forms.Button deletespbtn;
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button searchsp;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblCout;

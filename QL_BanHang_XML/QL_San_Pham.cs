@@ -50,30 +50,30 @@ namespace QL_BanHang_XML
         {
             if (id.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập id!");
+                MessageBox.Show("Bạn chưa nhập id!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }else if (name.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập Tên sản phẩm!");
+                MessageBox.Show("Bạn chưa nhập Tên sản phẩm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else if (gia.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập giá sản phẩm!");
+                MessageBox.Show("Bạn chưa nhập giá sản phẩm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else if (soluong.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập số lượng!");
+                MessageBox.Show("Bạn chưa nhập số lượng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else if (mota.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập Mô tả!");
+                MessageBox.Show("Bạn chưa nhập Mô tả!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else if (ngaysanxuat.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập ngày sản xuất!");
+                MessageBox.Show("Bạn chưa nhập ngày sản xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else if (hansudung.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập Hạn sử dụng!");
+                MessageBox.Show("Bạn chưa nhập Hạn sử dụng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else
             {
@@ -156,6 +156,47 @@ namespace QL_BanHang_XML
         private void clear_Click(object sender, EventArgs e)
         {
             cleartextbox();
+            DisplayData();
+        }
+
+        private void deletespbtn_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Bạn có chắn chắn muốn xoá không?","Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Error);
+            if(d == DialogResult.Yes)
+            {
+                bool kt = data.DeleteProduct(id.Text);
+                if (!kt)
+                {
+                    MessageBox.Show("Có lỗi khi xoá!","Thông báo");
+                    return;
+                }
+                DisplayData();
+                cleartextbox();
+            }
+        }
+
+        private void searchsp_Click(object sender, EventArgs e)
+        {
+            string idsp = txtSearch.Text;
+            List<sanpham> li = new List<sanpham>();
+            sanpham sp = data.FindID(idsp);
+            if (sp != null)
+            {
+                li.Add(sp);
+                dataGridViewSP.DataSource = li;
+                lblCout.Text = dataGridViewSP.Rows.Count + "";
+                id.Text = sp.id;
+                name.Text = sp.name;
+                gia.Text = sp.gia;
+                soluong.Text = sp.soluong;
+                mota.Text = sp.mota;
+                ngaysanxuat.Text = sp.ngaysanxuat;
+                hansudung.Text = sp.hansudung;
+            }
+            else
+            {
+                MessageBox.Show("Không có sản phẩm nào có id : " + idsp, "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }

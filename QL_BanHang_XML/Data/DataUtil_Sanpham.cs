@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.IO;
 using QL_BanHang_XML.model;
+using System.Xml.Linq;
 
 namespace QL_BanHang_XML.Data
 {
@@ -104,6 +105,35 @@ namespace QL_BanHang_XML.Data
                 return true;
             }
             return false;
+        }
+        public bool DeleteProduct(string id)
+        {
+            XmlNode stfind = root.SelectSingleNode("product[@id='" + id + "']");
+            if (stfind != null)
+            {
+                root.RemoveChild(stfind);
+                doc.Save(filename);
+                return true;
+            }
+            return false;
+        }
+        public sanpham FindID(string id)
+        {
+            XmlNode stfind = root.SelectSingleNode("product[@id='" + id + "']");
+            sanpham sp = null;
+            if (stfind != null)
+            {
+                sp = new sanpham();
+                sp.id = stfind.Attributes[0].InnerText;
+                sp.name = stfind.SelectSingleNode("name").InnerText;
+                sp.gia = stfind.SelectSingleNode("gia").InnerText;
+                sp.soluong = stfind.SelectSingleNode("soluong").InnerText;
+                sp.mota = stfind.SelectSingleNode("mota").InnerText;
+                sp.ngaysanxuat = stfind.SelectSingleNode("ngaysanxuat").InnerText;
+                sp.hansudung = stfind.SelectSingleNode("hansudung").InnerText;
+
+            }
+            return sp;
         }
 
     }

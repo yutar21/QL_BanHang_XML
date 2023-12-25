@@ -34,7 +34,7 @@ namespace QL_BanHang_XML
             if (username == "admin" && password == "1234")
             {
                 // Hiển thị hộp thoại đăng nhập thành công
-                MessageBox.Show("Đăng nhập thành công!");
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Home home = new Home();
                 home.Show();
                 this.Hide();
@@ -42,7 +42,7 @@ namespace QL_BanHang_XML
             else
             {
                 // Hiển thị hộp thoại lỗi
-                MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!");
+                MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
