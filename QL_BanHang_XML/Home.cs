@@ -61,7 +61,9 @@ namespace QL_BanHang_XML
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            QL_Khach_Hang QLKH = new QL_Khach_Hang();
+            QLKH.Show();
+            this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
