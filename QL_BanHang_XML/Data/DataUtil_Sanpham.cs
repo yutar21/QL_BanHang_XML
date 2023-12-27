@@ -75,6 +75,19 @@ namespace QL_BanHang_XML.Data
             return li;
 
         }
+        public bool ProductExists(string id)
+        {
+            // Check if a product with the given ID already exists in the XML file
+            XmlNodeList nodes = root.SelectNodes("product");
+            foreach (XmlNode node in nodes)
+            {
+                if (node.Attributes[0].InnerText == id)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         public bool UpdateProduct(sanpham s)
         {
             XmlNode stfind = root.SelectSingleNode("product[@id='" + s.id + "']");

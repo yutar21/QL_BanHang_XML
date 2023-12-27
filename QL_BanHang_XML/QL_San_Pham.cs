@@ -85,6 +85,11 @@ namespace QL_BanHang_XML
                 sp.mota = mota.Text;
                 sp.ngaysanxuat = ngaysanxuat.Text;
                 sp.hansudung = hansudung.Text;
+                if (data.ProductExists(sp.id))
+                {
+                    MessageBox.Show("Sản phẩm có ID này đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 data.Addproduct(sp);
                 cleartextbox();
                 DisplayData();

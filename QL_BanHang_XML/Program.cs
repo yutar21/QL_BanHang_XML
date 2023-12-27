@@ -16,7 +16,7 @@ namespace QL_BanHang_XML
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QL_Khach_Hang());
+            Application.Run(new QL_San_Pham());
         }
     }
 }
