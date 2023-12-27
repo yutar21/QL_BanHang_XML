@@ -34,7 +34,7 @@ namespace QL_BanHang_XML
             if (username == "admin" && password == "1234")
             {
                 // Hiển thị hộp thoại đăng nhập thành công
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 Home home = new Home();
                 home.Show();
                 this.Hide();
@@ -53,7 +53,7 @@ namespace QL_BanHang_XML
 
         private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
-
+            textBoxPassword.PasswordChar = '*';
         }
     }
 }

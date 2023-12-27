@@ -24,3 +24,16 @@ D:\hoc tap\xml_web\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj
 D:\hoc tap\xml_web\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.CoreCompileInputs.cache
 D:\hoc tap\xml_web\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.exe
 D:\hoc tap\xml_web\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.pdb
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\bin\Debug\QL_BanHang_XML.exe.config
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\bin\Debug\QL_BanHang_XML.exe
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\bin\Debug\QL_BanHang_XML.pdb
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.AssemblyReference.cache
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.Home.resources
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.Login.resources
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.Properties.Resources.resources
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.QL_Khach_Hang.resources
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.QL_San_Pham.resources
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.GenerateResource.cache
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.csproj.CoreCompileInputs.cache
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.exe
+C:\Users\lan12\source\repos\QL_BanHang_XML\QL_BanHang_XML\obj\Debug\QL_BanHang_XML.pdb
